@@ -31,7 +31,18 @@ var textBox = document.getElementById("fizz-num");
 var button = document.getElementById("submit-button");
 
 function fizzBuzz () {
-  console.log("Wooo fiizzzbuzz");
+  var num = Number(textBox.value);
+  for (var count = 1; count < num; count++) {
+    if (count % 3 === 0) {
+      // Print Fizz
+    } else if (count % 5 === 0) {
+      // Print Buzz
+    } else if (count % 15 === 0) {
+      // Print FizzBuzz
+    } else {
+      // Print count
+    }
+  }
 }
 
 button.addEventListener('click', fizzBuzz);
