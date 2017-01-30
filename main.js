@@ -34,13 +34,13 @@ function fizzBuzz () {
   var num = Number(textBox.value);
   for (var count = 1; count < num; count++) {
     if (count % 15 === 0) {
-      console.log("FizzBuzz");
+      resultsDiv.innerHTML += "<p>FizzBuzz</p>";
     } else if (count % 5 === 0) {
-      console.log("Buzz");
+      resultsDiv.innerHTML += "<p>Buzz</p>";
     } else if (count % 3 === 0) {
-      console.log("Fizz");
+      resultsDiv.innerHTML += "<p>Fizz</p>";
     } else {
-      console.log(count);
+      resultsDiv.innerHTML += "<p>" + count + "</p>";
     }
   }
 }
