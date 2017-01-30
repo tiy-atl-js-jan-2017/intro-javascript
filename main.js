@@ -33,14 +33,14 @@ var button = document.getElementById("submit-button");
 function fizzBuzz () {
   var num = Number(textBox.value);
   for (var count = 1; count < num; count++) {
-    if (count % 3 === 0) {
-      // Print Fizz
+    if (count % 15 === 0) {
+      console.log("FizzBuzz");
     } else if (count % 5 === 0) {
-      // Print Buzz
-    } else if (count % 15 === 0) {
-      // Print FizzBuzz
+      console.log("Buzz");
+    } else if (count % 3 === 0) {
+      console.log("Fizz");
     } else {
-      // Print count
+      console.log(count);
     }
   }
 }
